@@ -1,0 +1,21 @@
+{
+  "name": "izobilie-remotion-olya-kolya",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "start": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts OlyaKolyaTest out/olya-kolya-5s.mp4 --codec h264 --crf 18",
+    "stills": "remotion still src/index.ts OlyaKolyaTest out/frame75.png --frame 75"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.540",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "remotion": "4.0.540"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.10",
+    "@types/react-dom": "19.1.7",
+    "typescript": "5.9.2"
+  }
+}
